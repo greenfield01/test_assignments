@@ -1,2 +1,2 @@
-num = input().strip()
-print(sum(int(d) for d in num if d.isdigit()))
+def sum_of_digits(n: int) -> int:
+    return sum(int(d) for d in str(abs(n)))
