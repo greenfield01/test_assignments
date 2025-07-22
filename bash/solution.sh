@@ -1,9 +1,5 @@
 #!/bin/bash
+# This script squares a number passed via stdin
 
-sum=0
 read number
-digits=$(echo $number | grep -o .)
-for d in $digits; do
-  sum=$((sum + d))
-done
-echo $sum
+echo $((number * number))
