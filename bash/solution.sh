@@ -1,5 +1,3 @@
 #!/bin/bash
-# This script squares a number passed via stdin
-
-read number
-echo $((number * number))
+# This script adds two numbers provided as arguments
+echo $(($1 + $2))
