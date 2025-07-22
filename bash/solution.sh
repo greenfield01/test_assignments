@@ -1,3 +1,3 @@
 #!/bin/bash
-# This script adds two numbers provided as arguments
-echo $(($1 + $2))
+read a b
+echo $((a + b))
