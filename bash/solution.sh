@@ -1,7 +1,9 @@
 #!/bin/bash
 
-add() {
-  echo $(($1 + $2))
-}
-
-add "$1" "$2"
+sum=0
+read number
+digits=$(echo $number | grep -o .)
+for d in $digits; do
+  sum=$((sum + d))
+done
+echo $sum
