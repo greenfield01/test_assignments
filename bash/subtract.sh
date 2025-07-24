@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Read two integers from input
-read a
-read b
+# Read two numbers from standard input using a single read
+read a b
 
-# Subtract and output the result
+# Print their difference
 echo $((a - b))
